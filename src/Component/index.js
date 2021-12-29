@@ -68,27 +68,20 @@ const SDataTable = (props) => {
 	const columns = [
 		{
 			id: 1,
-			name: "Edit",
-			selector: (row) => <EditIcon onClick={() => handleEdit(row)} />,
-			sortable: true,
-			reorder: true,
-		},
-		{
-			id: 2,
 			name: "ID",
 			selector: (row) => row.id,
 			sortable: true,
 			reorder: true,
 		},
 		{
-			id: 3,
+			id: 2,
 			name: "First Name",
 			selector: (row) => row.first_name,
 			sortable: true,
 			reorder: true,
 		},
 		{
-			id: 4,
+			id: 3,
 			name: "Last Name",
 			selector: (row) => row.last_name,
 			sortable: true,
@@ -96,7 +89,7 @@ const SDataTable = (props) => {
 			reorder: true,
 		},
 		{
-			id: 5,
+			id: 4,
 			name: "Email ",
 			selector: (row) => row.email,
 			sortable: true,
@@ -104,7 +97,7 @@ const SDataTable = (props) => {
 			reorder: true,
 		},
 		{
-			id: 6,
+			id: 5,
 			name: "Avatar",
 			selector: (row) => (
 				<img
@@ -115,6 +108,13 @@ const SDataTable = (props) => {
 			),
 			sortable: true,
 			right: true,
+			reorder: true,
+		},
+		{
+			id: 6,
+			name: "Edit",
+			selector: (row) => <EditIcon onClick={() => handleEdit(row)} />,
+			sortable: true,
 			reorder: true,
 		},
 		{
