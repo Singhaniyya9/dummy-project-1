@@ -1,0 +1,2 @@
+export const DEFAULT_CASE = "DEFAULT_CASE";
+export const FETCH_TABLE_DATA = "FETCH_TABLE_DATA";
